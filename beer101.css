@@ -22,6 +22,7 @@ body {
 	width: 100%;
 	top: 0px;
 	background-color: #364A5A;
+	z-index: 999;
 }
 
 /* mobile menu */
@@ -48,6 +49,7 @@ body {
 	top: 44px;
 	left: 0;
 	background-color: #455B6D;
+	z-index: 998;
 }
 
 .top-menu-header {
@@ -97,3 +99,82 @@ body {
 .alternate.menu, .alternate.menu-anchor, .alternate.menu-item {
 	display: none;
 }
+
+/* Headline Panel */
+
+.banner {
+	height: 300px;
+	width: 100%;
+	margin-top: 60px;
+}
+
+.banner.background-image {
+	height: 100%;
+	width: 100%;
+	background-image: url('http://www.thegoodshoppingguide.com/wp-content/uploads/2013/03/beer.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.banner.background-image-overlay {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	background-color: rgba(0,0,0, 0.35);
+}
+
+.headline {
+    position: relative;
+    top: 45px;
+    margin: 0;
+    padding: 10px 25px 10px;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+}
+
+.sub-headline {
+	position: relative;
+	width: 80%;
+    top: 45px;
+    margin: 0 auto;
+    padding: 15px 20px 20px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+/* About panel */
+
+.section {
+	width: 100%;
+	margin: 0 auto;
+	border-bottom: 1px solid #D9D9D9;
+	overflow: hidden;
+}
+
+.title {
+	padding: 5%;
+    font-size: 24px;
+    text-align: center;
+    color: #364A5A;
+    border-bottom: 2px #D85F22 solid;
+}
+
+.body {
+	padding: 5%;
+    font-size: 15px;
+    color: #364A5A
+}
+
+
+
+
+
+
+
+
+
+
+
