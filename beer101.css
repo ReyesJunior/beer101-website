@@ -149,24 +149,36 @@ body {
 /* Sections */
 
 .section {
-	width: 100%;
+	max-width: 620px;
 	margin: 0 auto;
 	border-bottom: 1px solid #D9D9D9;
 	overflow: hidden;
+	padding: 2% 5% 5%;
 }
 
-.title {
-	padding: 5%;
+.title, .sub-title {
     font-size: 24px;
-    text-align: center;
     color: #364A5A;
-    border-bottom: 2px #D85F22 solid;
 }
 
 .body {
-	padding: 5%;
+    padding: 15px 30px 20px;
     font-size: 15px;
-    color: #364A5A
+    color: #364A5A;
+    margin: 0 auto;
+    max-width: 620px;
+    line-height: 22px;
+}
+
+.body li {
+	width: 100%;
+	list-style: none;
+    margin: 10px auto;
+}
+
+strong {
+	font-size: 17px;
+	color: #263644
 }
 
 .complete-text {
@@ -183,22 +195,46 @@ body {
 }
 
 .sub-section-text-button {
-	font-size: 12px;
+	font-size: 14px;
 	padding: 5px;
 	color: #D85F22;
-	width: 80px;
-	margin: 0 auto 0 15px;
-	border: 1px solid black;
+	width: 100px;
+	margin: 0 15px 0 auto;
+}
+.sub-section-text-button:hover {
+	color: #364A5A;
 }
 
 /* Individual sections */
 
-.about.section, .timeline.section, .brewing.section, .beer-types.section, .beer-styles.section {
+.about.top-section, .timeline.top-section, .brewing.top-section, .beer-types.top-section, .beer-styles.top-section, .brewing-gallery.top-section {
 	background-color: #F5F4F4;
+	padding: 0;
+	width: 100%;
 }
+
+.about.title, .timeline.title, .brewing.title, .beer-types.title, .beer-styles.title {
+	padding: 20px 15px 25px;
+	margin: 0;
+	border-bottom: 2px #D85F22 solid;
+	text-align: center;
+}
+
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* TimeLime CSS */
+
+.timeline-prompt {
+	display: none;
+	padding: 5px;
+    margin: 50px auto 0 auto;
+    width: 330px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    background-color: #364A5A;
+    border: 2px solid #D9D9D9
+}
 
 .timeline-container {
  	overflow: scroll;
@@ -210,9 +246,10 @@ body {
 
 .beer-timeline {
 	list-style: none;
-	margin: 50px 0 30px 10px;
+	margin: 50px 0 30px 0px;
+	margin-left: 10%;
 	padding-left: 30px;
-	border-left: 8px solid #FB372D;
+	border-left: 8px solid #D9D9D9;
 }
 
 /* -------------------------------------
@@ -240,19 +277,20 @@ body {
 }
 
 .radio:checked + .relative .circle {
-  background: black;
+  background: #FFA500;
 }
 
 .radio:checked ~ .snapshot-content {
   max-height: 380px;
-  border-color: black;
+  max-width: 280px;
+  border-color: #364A5A;
   margin-right: 20px;
   transform: translateX(20px);
   transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
 .radio:checked ~ .snapshot-content p {
   max-height: 360px;
-  color: black;
+  color: #364A5A;
   transition: color 0.3s linear 0.3s;
 }
 /* -------------------------------------
@@ -261,28 +299,37 @@ body {
 label {
 	position: absolute;
 	display: block;
-	width: 80%;
+	width: 180px;
 	top: 15px;
 	padding: 2px;
 	text-align: center;
-	font-size: 18px;
+	font-size: 16px;
 	overflow: hidden;
 	z-index: 100;
 	cursor: pointer;
-	background-color: orange;
+	border: 2px solid #D9D9D9;
+	background-color: #FFA500;
 	transform: translateX(18px);
 	transition: transform 0.2s linear;
 }
 
+label:hover {
+	background-color: #364A5A;
+	color: white;
+}
+
 .date {
 	position: absolute;
+	width: 67px;
 	padding: 2px;
 	left: 20px;
     top: -25px;
 	font-size: 14px;
+	text-align: center; 
 	line-height: 20px;
-	background-color: orange;
+	background-color: #D9D9D9;
 }
+
 
 .circle {
   margin-top: -10px;
@@ -290,7 +337,7 @@ label {
   left: -43px;
   width: 10px;
   height: 10px;
-  background: #FB372D;
+  background: #364A5A;
   border: 4px solid #364A5A;
   border-radius: 50%;
   display: block;
@@ -329,21 +376,256 @@ label {
 }
 
 .snapshot-content:after {
-	border-right-color: #48b379;
+	border-right-color: #FFA500;
 	border-width: 17px;
 	top: 50%;
 	margin-top: -17px;
 }
 
 .snapshot-content p {
-	margin: 0 0 15px;
-}
-
-.snapshot-content p {
   max-height: 0;
+  margin: 0 0 15px;
   font-size: 14px;
   color: transparent;
   overflow: hidden;
 }
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Beer Brewing Slider Gallery  CSS */
+
+
+.brewing-process-gallery {
+	position: relative;
+    margin: 0px auto 50px auto;
+    width: 100%;
+    padding: 0;
+    background: #F5F4F4;
+}
+
+.slider-wrapper {
+	position: relative;
+	width: 275px;
+	height: 500px;
+	margin: 0 auto;
+	background: #F5F4F4;
+	overflow: hidden;
+}
+
+.slider {
+	position: absolute;
+	width: 1000em;
+	left: 0;
+}
+
+.gallery-button {
+	cursor: pointer;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 28px;
+	background: url(http://i.stack.imgur.com/tuKVp.gif) no-repeat center center;
+}
+
+.arrow-left {
+	left: -16px;
+	/* remove this after you replace image*/
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+}
+
+.arrow-right {
+	right: -16px;
+}
+
+/* -------------------------------------
+ * Beer Brewing Slider Card
+ * ------------------------------------- */
+
+.slide-card {
+	/* OuterWidth = width + margin-right (for slider animation) */
+    position: relative;
+    float: left;
+    width: 273px;
+    margin-top: 25px;
+    margin-right: 200px;
+    background-color: white;
+    color: #364A5A;
+    height: 450px;
+    border: 1px solid #D85F22;
+}
+
+.step-title {
+	width: 35%;
+    background-color: #D85F22;
+    color: white;
+    text-align: center;
+    padding-bottom: 4px;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.step-name {
+	margin: 10px auto;
+    width: 75%;
+    background-color: #364A5A;
+    color: white;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+.step-description {
+	font-size: 15px;
+	padding: 2.5% 5%;
+}
+
+/* -------------------------------------
+ * Media Queries
+ * ------------------------------------- */
+
+@media (min-width: 620px) {
+
+.banner {
+	height: 350px;
+}
+
+.headline {
+	padding-top: 50px;
+	font-size: 32px;
+}
+
+.sub-title {
+	font-size: 17px;
+}
+
+.about.title, .timeline.title, .brewing.title, .beer-types.title, .beer-styles.title {
+	margin: 0 auto;
+	width: 620px;
+}
+
+.body {
+    padding: 20px 30px 25px
+}
+
+.timeline-prompt {
+	display: block;
+}
+
+.timeline-container {
+	margin-bottom: 50px;
+	height: 500px;
+	border-bottom: 2px solid #D9D9D9;
+}
+
+.beer-timeline {
+	margin: 120px 0 0;
+	padding: 0;
+	border-top: 8px solid #D9D9D9;
+	display: table;
+	border-spacing: 30px 0;
+}
+
+.snapshot {
+	display: table-cell;
+}
+
+.snapshot.relative {
+	position: relative;
+}
+
+
+.date {
+	text-align: center;
+	top: -55px;
+	left: 80px;
+	right: 0;
+}
+
+.circle {
+	margin: 0 auto;
+	top: -14px;
+	left: 0;
+	right: 0;
+}
+
+.snapshot-content {
+	width: 200px;
+	max-height: 0;
+	margin-top: 40px;
+	vertical-align: top;
+	padding: 50px 15px 15px;
+	transition: width 0.4s linear, max-height 0.4s linear;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 0.5em;
+	position: relative;
+}
+.snapshot-content:before, .snapshot-content:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	position: absolute;
+	pointer-events: none;
+	bottom: 100%;
+}
+.snapshot-content:before {
+	border-bottom-color: inherit;
+	border-width: 17px;
+	left: 50%;
+	top: -15px;
+	margin-left: -25px;
+}
+.snapshot-content:after {
+	border-bottom-color: #FFA500;
+	border-width: 15px;
+	left: 41%;
+	top: -13px;
+	margin-left: 5px;
+}
+
+label {
+	top: 60px;
+	left: 15px;
+}
+
+.radio:checked + .relative label {
+	cursor: auto;
+	width: 75%;
+	transition: width 0.3s linear 0.2s;
+}
+
+.radio:checked ~ .snapshot-content {
+	max-height: 250px;
+	width: 400px;
+}
+.radio:checked ~ .snapshot-content p {
+ 	max-height: 250px;
+}
+
+
+.slider-wrapper {
+	width: 375px;
+}
+
+.slide-card {
+	width: 373px;
+	margin-right: 100px;
+}
+
+
+
+
+
+
+
+
 
 
