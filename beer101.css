@@ -64,7 +64,7 @@ body {
 .mobile-header, .desktop-header {
 	font-size: 28px;
 	margin: 0;
-	padding: 15px 20px 10px;
+	padding: 10px 20px;
 	text-align: center;
 	color: white;
 }
@@ -96,8 +96,8 @@ body {
 /* :hover */
 
 .mobile-menu-anchor:hover, .menu-anchor:hover {
-	color: #364A5A;
-	background-color: #FEDA20;
+	color: white;
+	background-color: #D85F22;
 }
 
 /* -------------------------------------
@@ -113,9 +113,21 @@ body {
 .banner.background-image {
 	height: 100%;
 	width: 100%;
-	background-image: url('http://www.thegoodshoppingguide.com/wp-content/uploads/2013/03/beer.jpg');
+	background-image: url('http://i.imgur.com/uUwXVQ4.jpg?1');
 	background-size: cover;
 	background-position: center;
+}
+
+.timeline.banner.background-image {
+	background-image: url('http://i.imgur.com/jD6tOT3.jpg?1');
+}
+
+.brewing.banner.background-image {
+	background-image: url('http://i.imgur.com/S1U3FgR.jpg?1');
+}
+
+.classifications.banner.background-image {
+	background-image: url('http://i.imgur.com/9YRv6HU.jpg?1');
 }
 
 .banner.background-image-overlay {
@@ -195,6 +207,12 @@ strong {
 	color: white;
 	width: 62px;
 	margin: 40px auto 0 auto;
+}
+
+.section-text-button:hover {
+	color: #D85F22;
+	background-color: #364A5A;
+
 }
 
 .sub-section-text-button {
@@ -505,17 +523,27 @@ label:hover {
 		font-size: 32px;
 	}
 
-	.sub-title {
+	.sub-headline {
 		font-size: 17px;
 	}
 
 	.about.title, .timeline.title, .brewing.title, .beer-types.title, .beer-styles.title {
 		margin: 0 auto;
+		padding: 25px 15px 20px;
 		width: 620px;
+		font-size: 28px;
+	}
+
+	.sub-title {
+		font-size: 26px;
 	}
 
 	.body {
-	    padding: 20px 30px 25px
+	        padding: 2% 5% 5%;
+	}
+
+	.beer-assessment.sub-section-text-button {
+		display: none;
 	}
 
 	.timeline-prompt {
@@ -543,7 +571,6 @@ label:hover {
 	.snapshot.relative {
 		position: relative;
 	}
-
 
 	.date {
 		text-align: center;
@@ -614,7 +641,6 @@ label:hover {
 	 	max-height: 250px;
 	}
 
-
 	.slider-wrapper {
 		width: 375px;
 	}
@@ -623,9 +649,86 @@ label:hover {
 		width: 373px;
 		margin-right: 100px;
 	}
+
+	.beer-assessment.sub-section-text-button, .brewing.sub-section-text-button {
+		display: none !important;
+	}
 }
 
+/* >800px */
 
+@media (min-width: 800px) {
+
+	.headline {
+		font-size: 38px;
+	}
+
+	.sub-headline {
+		font-size: 18px;
+	}
+
+	.about.title, .timeline.title, .brewing.title, .beer-types.title, .beer-styles.title {
+		padding: 30px 15px 20px;
+	}
+
+	.what-is-beer.sub-section-text-button, .brewing.section-text-button {
+		display: none !important;
+	}
+
+	.mobile-menu-button-container {
+		display: none;
+	}
+
+	.mobile-header {
+		display: none;
+	}
+
+	.desktop-header {
+		display: block;
+		padding: 10px 0;
+	}
+
+	.top-menu-header {
+		height: 100%;
+		width: 20%;
+		padding: 0;
+		float: left;
+		background-color: #D85F22;
+	}
+
+	.alternate.menu {
+		display: block;
+	    width: 80%;
+	    float: left;
+	    height: 100%;
+	    margin: 0;
+	    padding: 0;
+	}
+
+	.alternate.menu-anchor {
+		display: inline-block;
+	    padding: 0px;
+	    width: 24%;
+	    margin: 12px 0 0;
+	    vertical-align: middle;
+	    border-bottom: none;
+	    background-color: #00F;
+	}
+
+	.alternate.menu-item {
+		display: block;
+	    background-color: #364A5A;
+	    margin: 0;
+	    height: 100%;
+	    padding: 8px;
+	    font-size: 14px;
+	    text-align: center
+	}
+	.alternate.menu-item:hover {
+		color: white;
+		background-color: #D85F22;
+	}
+}
 
 
 
