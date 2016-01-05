@@ -674,6 +674,9 @@ label:hover {
 	.what-is-beer.sub-section-text-button, .brewing.section-text-button {
 		display: none !important;
 	}
+}
+
+@media (min-width: 850px) {
 
 	.mobile-menu-button-container {
 		display: none;
@@ -712,7 +715,6 @@ label:hover {
 	    margin: 12px 0 0 10px;
 	    vertical-align: middle;
 	    border-bottom: none;
-	    background-color: #00F;
 	}
 
 	.alternate.menu-item {
@@ -729,9 +731,6 @@ label:hover {
 		background-color: #D85F22;
 	}
 }
-
-
-
 
 
 
