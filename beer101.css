@@ -105,19 +105,23 @@ body {
 
 /* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
 
-.homepage.row {
+.content-background.row {
 	background-color: #E6E9EC;
 }
 
 /* /////---------------------
 
-	carousel
+	carousel, banner
 
 /////---------------------- */
 
-.carousel-inner .item:first-child, .carousel-inner .item:nth-child(2), .carousel-inner .item:nth-child(3), .carousel-inner .item:nth-child(4) {
+.carousel-inner .item:first-child, .carousel-inner .item:nth-child(2), .carousel-inner .item:nth-child(3), .carousel-inner .item:nth-child(4), .banner {
 	height: 350px;
 	background-size: cover;
+}
+
+.banner {
+	position: relative;
 }
 
 .carousel-inner .item:first-child {
@@ -202,6 +206,11 @@ body {
     line-height: 22px;
 }
 
+.panel-body li {
+	list-style: none;
+    margin: 10px auto;
+}
+
 .hidden-text {
 	display: none;
 }
@@ -220,6 +229,11 @@ body {
 .text-visibility-button:hover {
 	color: #D85F22;
 	background-color: #364A5A;
+}
+
+strong {
+	font-size: 17px;
+	color: #263644
 }
 
 
@@ -268,12 +282,9 @@ body {
  * ------------------------------------- */
 
 
-.banner.background-image {
-	height: 100%;
-	width: 100%;
-	background-image: url('http://i.imgur.com/uUwXVQ4.jpg?1');
+.timeline.banner {
+	background-image: url('http://i.imgur.com/LxOtqxo.jpg?1');
 	background-size: cover;
-	background-position: center;
 }
 
 .timeline.banner.background-image {
@@ -288,49 +299,6 @@ body {
 	background-image: url('http://i.imgur.com/9YRv6HU.jpg?1');
 }
 
-
-/* -------------------------------------
- * Sections
- * ------------------------------------- */
-
-
-.body li {
-	width: 100%;
-	list-style: none;
-    margin: 10px auto;
-}
-
-strong {
-	font-size: 17px;
-	color: #263644
-}
-
-
-.sub-section-text-button {
-	font-size: 14px;
-	padding: 5px;
-	color: #D85F22;
-	width: 100px;
-	margin: 0 15px 0 auto;
-}
-.sub-section-text-button:hover {
-	color: #364A5A;
-}
-
-/* Individual sections, titles */
-
-.about.top-section, .timeline.top-section, .brewing.top-section, .beer-types.top-section, .beer-styles.top-section, .brewing-gallery.top-section {
-	background-color: #F5F4F4;
-	padding: 0;
-	width: 100%;
-}
-
-.about.title, .timeline.title, .brewing.title, .beer-types.title, .beer-styles.title {
-	padding: 20px 15px 25px;
-	margin: 0;
-	border-bottom: 2px #D85F22 solid;
-	text-align: center;
-}
 
 
 /* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
@@ -366,6 +334,10 @@ strong {
 }
 
 .timeline-container {
+	margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 4px;
+    background-color: white;
  	overflow: scroll;
  }
 
@@ -375,10 +347,10 @@ strong {
 
 .beer-timeline {
 	list-style: none;
-	margin: 50px 0 30px 0px;
-	margin-left: 10%;
-	padding-left: 30px;
-	border-left: 8px solid #D9D9D9;
+    margin: 50px 0 30px 0px;
+    margin-left: 10%;
+    padding-left: 33px;
+    border-left: 5px solid #D9D9D9;
 }
 
 /* -------------------------------------
@@ -449,7 +421,7 @@ label:hover {
 
 .date {
 	position: absolute;
-	width: 67px;
+	width: 75px;
 	padding: 2px;
 	left: 20px;
     top: -25px;
@@ -461,16 +433,16 @@ label:hover {
 
 
 .circle {
-  margin-top: -10px;
-  top: 50%;
-  left: -43px;
-  width: 10px;
-  height: 10px;
-  background: #364A5A;
-  border: 4px solid #364A5A;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
+    margin-top: -10px;
+    top: 50%;
+    left: -44px;
+    width: 18px;
+    height: 18px;
+    background: #364A5A;
+    border: 4px solid #364A5A;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
 }
 
 /* -------------------------------------
@@ -619,27 +591,13 @@ label:hover {
  * ------------------------------------- */
 
  @media (min-width: 500px) {
- 	.carousel-inner .item:first-child, .carousel-inner .item:nth-child(2), .carousel-inner .item:nth-child(3), .carousel-inner .item:nth-child(4) {
+ 	.carousel-inner .item:first-child, .carousel-inner .item:nth-child(2), .carousel-inner .item:nth-child(3), .carousel-inner .item:nth-child(4), .banner {
  		height: 400px;
  	}
-
- 	.carousel-caption {
-		height: 265px;
-	}
-
-	.carousel-caption h3 {
-		font-size: 34px;
-	}
-
-	.carousel-caption p {
-		font-size: 18px;
-	}
  }
 
 
-@media (min-width: 620px) {
-
-
+@media (min-width: 768px) {
 
 	.timeline-prompt {
 		display: block;
@@ -647,7 +605,7 @@ label:hover {
 
 	.timeline-container {
 		margin-bottom: 50px;
-		height: 500px;
+		height: 620px;
 		border-bottom: 2px solid #D9D9D9;
 	}
 
@@ -657,6 +615,7 @@ label:hover {
 		border-top: 8px solid #D9D9D9;
 		display: table;
 		border-spacing: 30px 0;
+		border-left: 0;
 	}
 
 	.snapshot {
@@ -676,8 +635,8 @@ label:hover {
 
 	.circle {
 		margin: 0 auto;
-		top: -14px;
-		left: 0;
+		top: -12px;
+		left: 4px;
 		right: 0;
 	}
 
@@ -686,7 +645,6 @@ label:hover {
 		max-height: 0;
 		margin-top: 40px;
 		vertical-align: top;
-		padding: 50px 15px 15px;
 		transition: width 0.4s linear, max-height 0.4s linear;
 		border-width: 2px;
 		border-style: solid;
@@ -729,11 +687,12 @@ label:hover {
 	}
 
 	.radio:checked ~ .snapshot-content {
-		max-height: 250px;
 		width: 400px;
+		max-height: 410px;
 	}
 	.radio:checked ~ .snapshot-content p {
-	 	max-height: 250px;
+	 	padding: 10px;
+	 	width: 100%;
 	}
 
 	.slider-wrapper {
