@@ -145,13 +145,13 @@ body {
     background-color: rgba(0,0,0, 0.35);
 }
 
-.carousel-caption {
-	top: 75px;
-    height: 215px;
-    padding: 0;
-    background-color: #F00;
-    min-width: 220px;
+.jumbotron {
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+	background-color: transparent;
 }
+
 .carousel-indicators {
 	position: static;
     width: 100%;
@@ -260,6 +260,8 @@ body {
 	top: 0;
 	width: 30%;
 }
+
+/* ///////////////////////////////////////////////// ------- Timeline ------- ///////////////////////////////////////////////// */
 
 /* -------------------------------------
  * Headline Panel, Banner
@@ -748,9 +750,19 @@ label:hover {
 	}
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
 
-@media (min-width: 992px) {}
+	.jumbotron {
+		width: 90%;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.jumbotron {
+		width: 70%;
+	}
+}
 
 
 
