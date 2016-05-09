@@ -38,7 +38,7 @@
 			</ul>			
 		</div>
 	</div>
-<!-- responsive Carousel -->
+<!-- responsive carousel -->
 	<div class="row">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 	<!-- Wrapper for slides -->
@@ -48,7 +48,7 @@
 						<div class="carousel-caption">
 							<h3>Familiarize yourself with Beer</h3>
 							<p>Browse through a collection of beer need-to-know's.</br>Learn all about one of the most popular beverages in the world!</p>
-							<button class="btn btn-primary">Button Button</button>
+							<a href="test"><button class="btn">Button Button</button></a>
 						</div>
 					</div>
 				</div>
@@ -57,7 +57,7 @@
 						<div class="carousel-caption">
 							<h3>Familiarize yourself with Beer</h3>
 							<p>Browse through a collection of beer need-to-know's.</br>Learn all about one of the most popular beverages in the world!</p>
-							<button class="btn btn-primary">Button Button</button>
+							<a href="test"><button class="btn">Button Button</button></a>
 						</div>
 					</div>
 				</div>
@@ -66,7 +66,7 @@
 						<div class="carousel-caption">
 							<h3>Familiarize yourself with Beer</h3>
 							<p>Browse through a collection of beer need-to-know's.</br>Learn all about one of the most popular beverages in the world!</p>
-							<button class="btn btn-primary">Button Button</button>
+							<a href="test"><button class="btn">Button Button</button></a>
 						</div>
 					</div>
 				</div>
@@ -75,7 +75,7 @@
 						<div class="carousel-caption">
 							<h3>Familiarize yourself with Beer</h3>
 							<p>Browse through a collection of beer need-to-know's.</br>Learn all about one of the most popular beverages in the world!</p>
-							<button class="btn btn-primary">Button Button</button>
+							<a href="test"><button class="btn">Button Button</button></a>
 						</div>
 					</div>
 				</div>
@@ -99,9 +99,9 @@
 		</div><!-- End of responsive slider -->
 	</div>
 <!-- main content -->
-	<div class="row">
+	<div class="homepage row">
 	<!-- Quick links Navigation -->
-		<div class="test1 col-xs-12 col-sm-4">
+		<div class="quick-links-panel hidden-xs col-sm-4">
 			<div class="panel-group quick-links accordion" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="panel panel-default">
 					<div class="quick-links panel-heading" role="tab" id="headingOne">
@@ -109,7 +109,7 @@
 							<h3 class="quick-links panel-title">Quick Links</h3>
 						</a>							
 					</div>
-					<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+					<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 						<div class="panel-body">
 							<ul>
 								<li class="dropdown-nav-button"><a href="">Beer Descriptors</a></li>
@@ -124,40 +124,43 @@
 			</div>
 		</div>
 	<!-- Content panels -->
-		<div class="test2 col-xs-12 col-sm-8">
+		<div class="col-xs-12 col-sm-8">
 			<div class="row">
 		<!-- About panel -->
-				<div class="section-panel col-xs-12">
+				<div class="first section-panel col-xs-12">
 					<div class="panel panel-default">
-						<div class="homepage panel-heading">
-							<h3 class="homepage panel-title">Welcome To Beer 101</h3>
+						<div class="first panel-heading">
+							<h3 class="panel-title">Welcome To Beer 101</h3>
 						</div>
-						<div class="homepage panel-body">Beer is one of the most popular beverages in the world. There are several different processes and many different components that many beer what it is. How is it made? Where does it come from? What kind of beer am I drinking right now? Talking to a beer enthusiasts, with very limited knowledge of the subject matter, can be tricky and a little daunting (understandably so). This site is dedicated to providing some beer-must-know's to those who wish to learn more about the world of beer.</div>
+						<div class="panel-body">
+							<p class="panel-body-text displayed-text">Beer is one of the most popular beverages in the world. There are several different processes and many different components that many beer what it is. How is it made? Where does it come from? What kind of beer am I drinking right now? Talking to a beer enthusiasts, with very limited knowledge of the subject matter, can be tricky and a little daunting (understandably so). This site is dedicated to providing some beer-must-know's to those who wish to learn more about the world of beer.
+							</p>
+						</div>
 					</div>
 				</div>
 		<!-- what-is-beer panel -->
 				<div class="section-panel col-xs-12">
 					<div class="panel panel-default">
-						<div class="homepage panel-heading">
-							<h3 class="homepage panel-title">What is Beer?</h3>
+						<div class="panel-heading">
+							<h3 class="panel-title">What is Beer?</h3>
 						</div>
-						<div class="homepage panel-body">
-							<p class="what-is-beer teaser-text">Let's start with the basics! Beer is an alcoholic beverage that is made from the fermentation of barley, hops, yeast, and water. Barley is a type of grain that is rich in starch and the main ingredient for making beer, it's analogous to grapes being the main ingredient for wine.</p>
-							<p class="what-is-beer complete-text">To make beer, you first must brew it. To brew it means to ferment it. The beer brewing process requires that you ferment a carbohyadate source (mainly barley, but it can technically come from any carbohydrate) and extract it's sugar supply. Once the sugar is free, yeast is added to the mix to begin fermentation. The fermentation process produces alcohol and carbon dioxide. Once the fermentation is completed, you have created beer!</p>
-							<p class="what-is-beer complete-text">Popular to contrary belief, beer "is not made from" hops. Hops contain essential oils and resins (sticky and flammable organic substances) and are used as an ingredient to add some "spice" to the beer's flavor. Hops are known for their distinctive bitterness and "hoppy" flavor.</p>
-							<div class="what-is-beer sub-section-text-button">Read More >></div>
+						<div class="panel-body">
+							<p class="panel-body-text displayed-text">Let's start with the basics! Beer is an alcoholic beverage that is made from the fermentation of barley, hops, yeast, and water. Barley is a type of grain that is rich in starch and the main ingredient for making beer, it's analogous to grapes being the main ingredient for wine.</p>
+							<p class="panel-body-text hidden-text">To make beer, you first must brew it. To brew it means to ferment it. The beer brewing process requires that you ferment a carbohyadate source (mainly barley, but it can technically come from any carbohydrate) and extract it's sugar supply. Once the sugar is free, yeast is added to the mix to begin fermentation. The fermentation process produces alcohol and carbon dioxide. Once the fermentation is completed, you have created beer!</p>
+							<p class="panel-body-text hidden-text">Popular to contrary belief, beer "is not made from" hops. Hops contain essential oils and resins (sticky and flammable organic substances) and are used as an ingredient to add some "spice" to the beer's flavor. Hops are known for their distinctive bitterness and "hoppy" flavor.</p>
+							<div class="what-is-beer text-visibility-button">Read More</div>
 						</div>
 					</div>
 				</div>
 		<!-- beer-descriptors panel -->
 				<div class="section-panel col-xs-12">
 					<div class="panel panel-default">
-						<div class="homepage panel-heading">
-							<h3 class="homepage panel-title">Useful Beer Descriptors</h3>
+						<div class="panel-heading">
+							<h3 class="panel-title">Useful Beer Descriptors</h3>
 						</div>
-						<div class="homepage panel-body">
-							<p class="beer-descriptors teaser-text">Since there exists such a diverse and varied beer selection to choose from, it can be difficult to accurately describe all of them. Luckily, there are some universal descriptors that will help you talk about beer with others. Here are some of the terms that are used to describe the "taste" of beer:</p>
-							<ul class="what-is-beer complete-text">
+						<div class="panel-body">
+							<p class="panel-body-text displayed-text">Since there exists such a diverse and varied beer selection to choose from, it can be difficult to accurately describe all of them. Luckily, there are some universal descriptors that will help you talk about beer with others. Here are some of the terms that are used to describe the "taste" of beer:</p>
+							<ul class="panel-body-text hidden-text">
 								<li><strong>Aggressive: </strong>Boldy assertive aroma and/or taste</li>
 								<li><strong>Balanced: </strong>Equal representation of malt sweetness and hop bitterness in the flavor</li>
 								<li><strong>Complex: </strong>Many flavors and sensations on the palate</li>
@@ -171,30 +174,31 @@
 								<li><strong>Roasty/Toasty: </strong>Malt (roasted grain) flavors</li>
 								<li><strong>Robust: </strong>Rich and full-bodied</li>
 							</ul>
-							<p class="beer-descriptors complete-text">The following are two other terms commonly used to describe a beer, but they don't describe taste:</p>
-							<ul class="what-is-beer complete-text">
+							<p class="panel-body-text hidden-text">The following are two other terms commonly used to describe a beer, but they don't describe taste:</p>
+							<ul class="panel-body-text hidden-text">
 								<li><strong>MouthFeel: </strong>is the tactile sensory experience of the whole insode of the mouth and throat - includes a sense of body.</li>
 								<li><strong>Body: </strong>the sensation of fullness, or viscosity, of a beer on the palate, ranging from watery to creamy; generally described as thin- , light- , medium- , or full-bodied.</li>
 							</ul>
-							<div class="beer-descriptors sub-section-text-button">Read More >></div>
+							<div class="beer-descriptors text-visibility-button">Read More</div>
 						</div>
 					</div>
 				</div>
 		<!-- Beer-assessment panel -->
 				<div class="section-panel col-xs-12">
 					<div class="panel panel-default">
-						<div class="homepage panel-heading">
-							<h3 class="homepage panel-title">Tasting and Evalutating</h3>
+						<div class="panel-heading">
+							<h3 class="panel-title">Tasting and Evalutating</h3>
 						</div>
-						<div class="homepage panel-body">
-							<p class="beer-descriptors teaser-text">When it comes to tasting and evaluating a beer, it is important to keep a few things in mind: Beer tasting is an art and it should require some knowledge of how beer brewing in order to fully apppreciate the beer tasting experience.</p>
-							<ul class="what-is-beer complete-text">
+						<div class="panel-body">
+							<p class="panel-body-text displayed-text">When it comes to tasting and evaluating a beer, it is important to keep a few things in mind: Beer tasting is an art and it should require some knowledge of how beer brewing in order to fully apppreciate the beer tasting experience.</p>
+							<p class="panel-body-text displayed-text">When it comes to tasting and evaluating a beer, it is important to keep a few things in mind: Beer tasting is an art and it should require some knowledge of how beer brewing in order to fully apppreciate the beer tasting experience.</p>
+							<ul class="panel-body-text hidden-text">
 								<li><strong>Inspect: </strong>Raise the beer in front of you and describe it's color and consistency.</li>
 								<li><strong>Agitate: </strong>Swirl your beer in your glass so that the aromas (and little nuances) are stimulated and released. This will prepare the beer for the next steps.</li>
 								<li><strong>Smell: </strong>Breathe in to savor the aromas. Agitate if need be.</li>
 								<li><strong>Taste: </strong>Sip the beer, but resist the urge to swallow the beer. Experience the mmouthfeel and consistency of the body.</li>
 							</ul>
-							<div class="beer-assessment sub-section-text-button">Read More >></div>
+							<div class="beer-assessment text-visibility-button">Read More</div>
 						</div>
 					</div>
 				</div>

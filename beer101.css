@@ -105,6 +105,10 @@ body {
 
 /* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
 
+.homepage.row {
+	background-color: #E6E9EC;
+}
+
 /* /////---------------------
 
 	carousel
@@ -157,39 +161,9 @@ body {
     list-style: none;
     background-color: #364A5A;
 }
-
-/* /////---------------------
-
-	Quick-links navigation
-
-/////---------------------- */
-
-.test1 {
-	position: relative;
-	background-color: red;
-}
-.quick-links.anchor-button {
-	display: block;
-	padding: 12px;
-	text-align: center;
-	text-decoration: none;
-	font-size: 18px;
-}
-.quick-links.panel-heading {
-	padding: 0;
-}
-.quick-links.accordion {
-	margin: 20px auto;
-	max-width: 350px;
-}
-.fixed-accordion {
-	position: fixed;
-	top: 0;
-	width: 30%;
-}
-
-.test2 {
-	background-color: white;
+.carousel-indicators .active {
+	background-color: #FF7200;
+	border-color: #FF7200;
 }
 
 
@@ -199,26 +173,53 @@ body {
 
 /////---------------------- */
 
-.section-panel {
-	border-bottom: 1px solid #D9D9D9;
+.first.section-panel {
 	padding-top: 20px;
 }
+
 .panel-title {
-	font-size: 24px;
+	font-size: 26px;
     color: #364A5A;
     text-align: center;
-    background-color: transparent;
 }
 
-.homepage.panel-heading {
-	padding: 15px;
+.panel-default>.panel-heading, .panel-heading {
+	padding: 25px;
+	width: 90%;
+    margin: 0 auto;
+    border-bottom: 2px solid #D85F22; 
 	background-color: white;
 }
 
+.first.panel-heading {
+	border-bottom: 2px solid #D85F22;
+}
+
 .panel-body {
+	padding: 20px 25px 25px 25px;
     font-size: 15px;
     color: #364A5A;
     line-height: 22px;
+}
+
+.hidden-text {
+	display: none;
+}
+
+.text-visibility-button {
+	width: 75px;
+    margin: 20px 0 0 auto;
+	font-size: 12px;
+    padding: 5px;
+	border-radius: 4px;
+    background-color: #D85F22;
+    text-align: center;
+    color: white;
+}
+
+.text-visibility-button:hover {
+	color: #D85F22;
+	background-color: #364A5A;
 }
 
 
@@ -228,33 +229,42 @@ body {
 
 /////---------------------- */
 
+.quick-links-panel {
+	position: relative;
+}
 
+.quick-links.anchor-button {
+	display: block;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+}
 
-/* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
+.quick-links.panel-heading {
+	padding: 0;
+	border-bottom: 2px solid #D85F22;
+}
 
+ .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 0;
+}
 
+.quick-links.accordion {
+	margin: 20px auto;
+	max-width: 350px;
+}
 
-
-
-/* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
-
-
-
-
-
-/* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
-
-
+.fixed-accordion {
+	position: fixed;
+	top: 0;
+	width: 30%;
+}
 
 /* -------------------------------------
  * Headline Panel, Banner
  * ------------------------------------- */
 
-.banner {
-	height: 300px;
-	width: 100%;
-	margin-top: 60px;
-}
 
 .banner.background-image {
 	height: 100%;
@@ -276,45 +286,11 @@ body {
 	background-image: url('http://i.imgur.com/9YRv6HU.jpg?1');
 }
 
-.headline {
-    position: relative;
-    top: 45px;
-    margin: 0;
-    padding: 10px 25px 10px;
-    font-size: 26px;
-    color: white;
-    text-align: center;
-}
-
-.sub-headline {
-	position: relative;
-	width: 80%;
-    top: 45px;
-    margin: 0 auto;
-    padding: 15px 20px 20px;
-    font-size: 14px;
-    color: white;
-    text-align: center;
-}
 
 /* -------------------------------------
  * Sections
  * ------------------------------------- */
 
-
-.title, .sub-title {
-    font-size: 24px;
-    color: #364A5A;
-}
-
-.body {
-    padding: 15px 30px 20px;
-    font-size: 15px;
-    color: #364A5A;
-    margin: 0 auto;
-    max-width: 620px;
-    line-height: 22px;
-}
 
 .body li {
 	width: 100%;
@@ -327,24 +303,6 @@ strong {
 	color: #263644
 }
 
-.complete-text {
-	display: none;
-}
-
-.section-text-button {
-	background-color: #D85F22;
-	font-size: 12px;
-	padding: 5px;
-	color: white;
-	width: 62px;
-	margin: 40px auto 0 auto;
-}
-
-.section-text-button:hover {
-	color: #D85F22;
-	background-color: #364A5A;
-
-}
 
 .sub-section-text-button {
 	font-size: 14px;
@@ -371,6 +329,23 @@ strong {
 	border-bottom: 2px #D85F22 solid;
 	text-align: center;
 }
+
+
+/* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
+
+
+
+
+
+/* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
+
+
+
+
+
+/* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
+
+
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -659,41 +634,10 @@ label:hover {
 	}
  }
 
-/* > 620px */
 
 @media (min-width: 620px) {
 
-	.banner {
-		height: 350px;
-	}
 
-	.headline {
-		padding-top: 50px;
-		font-size: 32px;
-	}
-
-	.sub-headline {
-		font-size: 17px;
-	}
-
-	.about.title, .timeline.title, .brewing.title, .beer-types.title, .beer-styles.title {
-		margin: 0 auto;
-		padding: 25px 15px 20px;
-		width: 620px;
-		font-size: 28px;
-	}
-
-	.sub-title {
-		font-size: 26px;
-	}
-
-	.body {
-	        padding: 2% 5% 5%;
-	}
-
-	.beer-assessment.sub-section-text-button {
-		display: none;
-	}
 
 	.timeline-prompt {
 		display: block;
@@ -804,82 +748,9 @@ label:hover {
 	}
 }
 
-/* >800px */
+@media (min-width: 768px) {}
 
-@media (min-width: 800px) {
-
-	.headline {
-		font-size: 38px;
-	}
-
-	.sub-headline {
-		font-size: 18px;
-	}
-
-	.about.title, .timeline.title, .brewing.title, .beer-types.title, .beer-styles.title {
-		padding: 30px 15px 20px;
-	}
-
-	.what-is-beer.sub-section-text-button, .brewing.section-text-button {
-		display: none !important;
-	}
-}
-
-@media (min-width: 850px) {
-
-	.mobile-menu-button-container {
-		display: none;
-	}
-
-	.mobile-header {
-		display: none;
-	}
-
-	.desktop-header {
-		display: block;
-		padding: 10px 0;
-	}
-
-	.top-menu-header {
-		height: 100%;
-		width: 20%;
-		padding: 0;
-		float: left;
-		background-color: #D85F22;
-	}
-
-	.alternate.menu {
-		display: block;
-	    width: 80%;
-	    float: left;
-	    height: 100%;
-	    margin: 0;
-	    padding: 0;
-	}
-
-	.alternate.menu-anchor {
-		display: inline-block;
-	    padding: 0px;
-	    width: 23%;
-	    margin: 12px 0 0 10px;
-	    vertical-align: middle;
-	    border-bottom: none;
-	}
-
-	.alternate.menu-item {
-		display: block;
-	    background-color: #364A5A;
-	    margin: 0;
-	    height: 100%;
-	    padding: 8px;
-	    font-size: 14px;
-	    text-align: center
-	}
-	.alternate.menu-item:hover {
-		color: white;
-		background-color: #D85F22;
-	}
-}
+@media (min-width: 992px) {}
 
 
 
