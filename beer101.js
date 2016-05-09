@@ -2,18 +2,18 @@ $(document).ready(function () {
 
 /* Menu functions */
 
-function animateMobileMenu() {
-  $( '.mobile-menu' ).animate( { height: 'toggle' }, 250 );
+function toggleMobileMenu() {
+  $( '.dropdown-mobile-menu' ).animate( { height: 'toggle' }, 250 );
 }
 
 function hideMobileMenu () {
-  $('.mobile-menu').hide();
+  $('.dropdown-mobile-menu').hide();
 }
 
-//Menu Event Bindings
-  $( '.mobile-menu-button' ).on( 'click', animateMobileMenu );
-  $( '.mobile-menu-item' ).on( 'click', animateMobileMenu );
-  $('a').on( 'click', hideMobileMenu );
+// Toggle dropdwon mobile menu
+  $( '.dropdown-hamburger' ).on( 'click', toggleMobileMenu );
+  $( '.dropdown-menu-button' ).on( 'click', toggleMobileMenu );
+  // $('a').on( 'click', hideMobileMenu );
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -39,9 +39,40 @@ function hideSub_SectionText () {
 $('.section-text-button').toggle( revealSectionText ,  hideSectionText );
 $('.sub-section-text-button').toggle( revealSub_SectionText ,  hideSub_SectionText );
 
+
+
+
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 // Window Resize functions
+
+  $(window).resize(function(){
+
+    var width = $(window).width();
+      if( width > 767 ){
+
+          $('#collapseOne.panel-collapse.collapse').addClass( 'in' );
+
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 575) {
+                $( '.accordion' ).addClass( 'fixed-accordion' );
+                
+            } else {
+                $( '.accordion' ).removeClass( 'fixed-accordion' );
+                // $('#collapseOne.panel-collapse.collapse').removeClass( 'in' );
+            }
+
+          });
+
+      } else {
+            $( '.accordion' ).removeClass( 'fixed-accordion' );
+            $('#collapseOne.panel-collapse.collapse').removeClass( 'in' );
+
+   }
+
+  });
 
 // On window resize > 800px, move 'Read More/Read Less' button to 2nd paragraph
   $(window).resize(function(){
