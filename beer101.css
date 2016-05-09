@@ -1,4 +1,11 @@
+/* /////---------------------
+
+	Global CSS
+
+/////---------------------- */
+
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+
 
 body {
 	font-family: "Noto Sans", sans-serif;
@@ -6,99 +13,238 @@ body {
 	padding: 0;
 }
 
-/* -------------------------------------
- * Page Wrapper
- * ------------------------------------- */
+/* /////---------------------
 
-.page-wrapper {
+	top-static navbar
+
+/////---------------------- */
+
+.top-static-navbar {
+	height: 60px;
 	width: 100%;
-	margin: 0 auto;
-	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	background-color: #364A5A;
+}
+
+.navbar-brand {
+	width: 200px;
+	height: 100%;
+	padding: 18px 0 0 35px;
+	background-color: #FF7200;
+	color: white;
+	font-size: 26px;
+}
+
+.dropdown-hamburger {
+	height: 50px;
+	width: 50px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;
+	background-image: url(http://stepupdate.com/assets/svg/icon-hamburger.svg);
+	background-size: cover;
+}
+
+/* mobile menu */
+
+.dropdown-mobile-menu {
+	display: none;
+	width: 100%;
+	padding: 0;
+	background-color: #457092;
+}
+
+.dropdown-mobile-menu ul, .inline-navigation ul {
+	margin: 0;
+	padding: 0;
+}
+
+.dropdown-menu-button, .nav-button {
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.dropdown-menu-button a {
+	display: block;
+	font-size: 16px;
+	padding: 12px;
+	text-decoration: none;
+	border-top: 1px solid #364A5A;
+	color: white;
+}
+
+.dropdown-menu-button:hover a, .nav-button:hover a {
+	text-decoration: none;
+	color: white;
+	background-color: #364A5A;
+}
+
+/* inline-navigation */
+
+.inline-navigation {
+	height: 100%;
+}
+
+.nav-button {
+	display: inline-block;
+}
+
+.nav-button a {
+	display: inline-block;
+    min-width: 130px;
+    padding: 10px;
+    margin: 10px 0 0 8px;
+    color: white;
+}
+
+.nav-button:hover a {
+	background-color: #FF7200;
+}
+
+/* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
+
+/* /////---------------------
+
+	carousel
+
+/////---------------------- */
+
+.carousel-inner .item:first-child, .carousel-inner .item:nth-child(2), .carousel-inner .item:nth-child(3), .carousel-inner .item:nth-child(4) {
+	height: 350px;
+	background-size: cover;
+}
+
+.carousel-inner .item:first-child {
+	background-image: url(http://i.imgur.com/hMGQwDJ.jpg?1);
+}
+
+.carousel-inner .item:nth-child(2){
+	background-image: url(http://i.imgur.com/NAmFwJy.jpg?1);
+}
+
+.carousel-inner .item:nth-child(3) {
+	background-image: url(http://i.imgur.com/pwcAheH.jpg?1);
+}
+
+.carousel-inner .item:nth-child(4) {
+	background-image: url(http://i.imgur.com/509f8cf.png?1);
+}
+
+.carousel-image-overlay {
+	position: absolute;
+	top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.35);
+}
+
+.carousel-caption {
+	top: 75px;
+    height: 215px;
+    padding: 0;
+    background-color: #F00;
+    min-width: 220px;
+}
+.carousel-indicators {
+	position: static;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+    background-color: #364A5A;
+}
+
+/* /////---------------------
+
+	Quick-links navigation
+
+/////---------------------- */
+
+.test1 {
+	position: relative;
+	background-color: red;
+}
+.quick-links.anchor-button {
+	display: block;
+	padding: 12px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+}
+.quick-links.panel-heading {
+	padding: 0;
+}
+.quick-links.accordion {
+	margin: 20px auto;
+	max-width: 350px;
+}
+.fixed-accordion {
+	position: fixed;
+	top: 0;
+	width: 30%;
+}
+
+.test2 {
 	background-color: white;
 }
 
-/* -------------------------------------
- * Fixed top Menu bar, Menus
- * ------------------------------------- */
 
-.fixed-top-menu-bar {
-	position: fixed;
-	height: 60px;
-	width: 100%;
-	top: 0px;
-	background-color: #364A5A;
-	z-index: 999;
+/* /////---------------------
+
+	Section-panel 
+
+/////---------------------- */
+
+.section-panel {
+	border-bottom: 1px solid #D9D9D9;
+	padding-top: 20px;
+}
+.panel-title {
+	font-size: 24px;
+    color: #364A5A;
+    text-align: center;
+    background-color: transparent;
 }
 
-.mobile-menu-button-container {
-	height: 50px;
-	width: 50px;
-	margin: 5px auto;
-	float: left;
-}
-
-.mobile-menu-button {
-	height: 100%;
-	width: 100%;
-	background-image: url('https://ddiostips.files.wordpress.com/2013/12/burger.png?w=470');
-	background-size: cover;
-	background-position: center;
-}
-
-.mobile-menu {
-	display: none;
-	position: absolute;
-	width: 100%;
-	top: 44px;
-	left: 0;
-	background-color: #455B6D;
-	z-index: 998;
-}
-
-.top-menu-header {
-	height: 100%;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.mobile-header, .desktop-header {
-	font-size: 28px;
-	margin: 0;
-	padding: 10px 20px;
-	text-align: center;
-	color: white;
-}
-
-.mobile-menu-anchor, .menu-anchor {
-	display: block;
-	width: 100%;
-	margin-left: -40px;
+.homepage.panel-heading {
 	padding: 15px;
-	color: white;
-	text-decoration: none;
-	border-bottom: 1px solid #364A5A;
+	background-color: white;
 }
 
-.mobile-menu-item {
-	font-size: 16px;
-	letter-spacing: 1px;
-	list-style: none;
+.panel-body {
+    font-size: 15px;
+    color: #364A5A;
+    line-height: 22px;
 }
 
-.desktop-header {
-	display: none;
-}
 
-.alternate.menu, .alternate.menu-anchor, .alternate.menu-item {
-	display: none;
-}
+/* /////---------------------
 
-/* :hover */
+	Quick-links navigation
 
-.mobile-menu-anchor:hover, .menu-anchor:hover {
-	color: white;
-	background-color: #D85F22;
-}
+/////---------------------- */
+
+
+
+/* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
+
+
+
+
+
+/* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
+
+
+
+
+
+/* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
+
+
 
 /* -------------------------------------
  * Headline Panel, Banner
@@ -130,14 +276,6 @@ body {
 	background-image: url('http://i.imgur.com/9YRv6HU.jpg?1');
 }
 
-.banner.background-image-overlay {
-	position: relative;
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	background-color: rgba(0,0,0, 0.35);
-}
-
 .headline {
     position: relative;
     top: 45px;
@@ -163,13 +301,6 @@ body {
  * Sections
  * ------------------------------------- */
 
-.section {
-	max-width: 620px;
-	margin: 0 auto;
-	border-bottom: 1px solid #D9D9D9;
-	overflow: hidden;
-	padding: 2% 5% 5%;
-}
 
 .title, .sub-title {
     font-size: 24px;
@@ -509,6 +640,24 @@ label:hover {
 /* -------------------------------------
  * Media Queries
  * ------------------------------------- */
+
+ @media (min-width: 500px) {
+ 	.carousel-inner .item:first-child, .carousel-inner .item:nth-child(2), .carousel-inner .item:nth-child(3), .carousel-inner .item:nth-child(4) {
+ 		height: 400px;
+ 	}
+
+ 	.carousel-caption {
+		height: 265px;
+	}
+
+	.carousel-caption h3 {
+		font-size: 34px;
+	}
+
+	.carousel-caption p {
+		font-size: 18px;
+	}
+ }
 
 /* > 620px */
 
