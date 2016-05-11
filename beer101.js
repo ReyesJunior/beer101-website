@@ -43,7 +43,7 @@ $('.text-visibility-button').toggle( revealSectionText ,  hideSectionText );
         $(window).scroll(function() {    
             var scroll = $(window).scrollTop();
 
-            if (scroll >= 755) {
+            if (scroll >= 780) {
                 $( '.accordion' ).addClass( 'fixed-accordion' );
                 
             } else {
@@ -72,7 +72,7 @@ function hideAllTextVisibilityButtons() {
 function showAllTextVisibilityButtons() {
   $('.what-is-beer.text-visibility-button').show();
   $('.beer-assessment.text-visibility-button').show();
-  $('.beer-descriptors.text-visibility-button').hide();
+  $('.beer-descriptors.text-visibility-button').show();
 }
 //removeCLasses
 function removeFirstHiddenTextClass() {
