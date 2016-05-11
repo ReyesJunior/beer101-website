@@ -206,6 +206,7 @@ a.btn.btn-primary:hover {
     margin-left: 25px;
     margin-right: 25px;
 	background-color: #D85F22;
+	border: 0;
 }
 
 .panel-body {
@@ -325,22 +326,12 @@ strong {
  	overflow: scroll;
  }
 
-/* timeline */
-
 .beer-timeline {
 	list-style: none;
     margin: 50px 0 30px 0px;
     margin-left: 10%;
     padding-left: 33px;
     border-left: 5px solid #D9D9D9;
-}
-
-/* snapshots */
-
-.snapshot {
-	width: 95%;
-	margin: 50px 0;
-	position: relative;
 }
 
 /* radio buttons */
@@ -422,7 +413,13 @@ label:hover {
     position: absolute;
 }
 
-/* snapshot content */
+/* snapshots */
+
+.snapshot {
+	width: 95%;
+	margin: 50px 0;
+	position: relative;
+}
 
  .snapshot-content {
 	max-height: 20px;
@@ -466,12 +463,11 @@ label:hover {
   overflow: hidden;
 }
 
-/* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////// ------- Brewing Process ------- ///////////////////////////////////////////////// */
 
 .brewing-process.banner {
 	background-image: url(http://i.imgur.com/WdR9Nb3.jpg?1);
 }
-
 
 /* /////---------------------
 
@@ -565,15 +561,28 @@ label:hover {
 	padding: 2.5% 5%;
 }
 
-/* -------------------------------------
- * Media Queries
- * ------------------------------------- */
+/* ///////////////////////////////////////////////// ------- Classification ------- ///////////////////////////////////////////////// */
+
+.classifications.banner {
+	background-image: url(http://i.imgur.com/TXioYP6.jpg?1);
+}
+
+.primary.panel.panel-default, .primary.panel-heading {
+	background-color: #364A5A;
+}
+
+.primary.panel-title, .primary.panel-body-text {
+	color: white;
+}
+
+
+/* ///////////////////////////////////////////////// ------- Media Queries ------- ///////////////////////////////////////////////// */
 
  @media (min-width: 350px) {
 
  	.jumbotron {
- 	padding-top: 30px;
-    /*padding-left: 45px !important;*/
+	 	padding-top: 30px;
+	    /*padding-left: 45px !important;*/
  	}
  }
 
