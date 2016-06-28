@@ -43,17 +43,20 @@ $('.text-visibility-button').toggle( revealSectionText ,  hideSectionText );
         $(window).scroll(function() {    
             var scroll = $(window).scrollTop();
 
-            if (scroll >= 780) {
-                $( '.accordion' ).addClass( 'fixed-accordion' );
+            if (scroll >= 875) {
+              $( '.quick-links-panel').addClass( 'fixed-quick-links-panel');
+              $( '.content-panels').addClass( 'content-panels-fixed');
                 
             } else {
-                $( '.accordion' ).removeClass( 'fixed-accordion' );
+              $( '.quick-links-panel').removeClass( 'fixed-quick-links-panel');
+              $( '.content-panels').removeClass( 'content-panels-fixed');
             }
 
           });
 
       } else {
-            $( '.accordion' ).removeClass( 'fixed-accordion' );
+        $( '.quick-links-panel').removeClass( 'fixed-quick-links-panel');
+        $( '.content-panels').removeClass( 'content-panels-fixed');
 
    }
 
