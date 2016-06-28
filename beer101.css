@@ -33,11 +33,12 @@ body {
 
 .navbar-brand {
 	width: 200px;
-	height: 100%;
-	text-align: center;
-	background-color: #FF7200;
-	color: white;
-	font-size: 26px;
+    height: 100%;
+    padding-top: 19px;
+    text-align: center;
+    background-color: #FF7200;
+    color: #fff;
+    font-size: 30px;
 }
 
 .dropdown-hamburger {
