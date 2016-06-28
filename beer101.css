@@ -285,15 +285,22 @@ strong {
 	max-width: 350px;
 }
 
-.fixed-accordion {
-	position: fixed;
-	top: 0;
-	width: 30%;
-}
-
 .panel-collapse.in {
 	margin-left: -25px;
 }
+
+/* Fixed-panel */
+
+.fixed-quick-links-panel {
+    top: 0;
+    position: fixed;
+}
+
+.content-panels-fixed {
+	float:right;
+}
+
+
 /* ///////////////////////////////////////////////// ------- Timeline ------- ///////////////////////////////////////////////// */
 
 .timeline.banner {
