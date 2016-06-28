@@ -103,7 +103,12 @@ body {
     color: white;
 }
 
-.nav-button:hover a {
+.nav-button a.active, .nav-button:hover a {
+	border-bottom: 2px solid rgba(0, 0, 0, 0);
+    border-bottom-color: #FF7200;
+}
+
+.nav-button a.active {
 	background-color: #FF7200;
 }
 
