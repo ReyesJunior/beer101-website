@@ -34,7 +34,7 @@ body {
 /* Toogle Menu */
 
 .toggle-menu-wrapper {
-	padding: 15px 15px 25px;
+	padding: 0 15px;
 }
 .toggle-menu-header {
 	margin: 0;
@@ -91,6 +91,14 @@ body {
 }
 .menu-list-item a:hover {
 	background-color: white;
+}
+.menu-list-item a.active::before {
+    content: '';
+    border-left: 5px solid #6a6c6d;
+    position: absolute;
+    height: 50%;
+    left: 0;
+    top: 25%;
 }
 
 .site-content {
