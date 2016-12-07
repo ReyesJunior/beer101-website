@@ -19,10 +19,123 @@ body {
 
 /////---------------------- */
 
+.sidebar-header-wrapper {}
 .sidebar-header {
-	background-color: #e6e6e6;
+	padding: 15px 15px 25px;
+	background-color: #e6e9ec;
+}
+.logo-wrapper {
+	height: 100px;
+}
+.logo {
+	text-align: center;
+}
+
+/* Toogle Menu */
+
+.toggle-menu-wrapper {
+	padding: 15px 15px 25px;
+}
+.toggle-menu-header {
+	margin: 0;
+    padding: 10px 0;
+    border-top: 1px solid #b2b5b7;
+    border-bottom: 1px solid #b2b5b7;
+    color: #6a6c6d;
+    text-align: center;
+}
+.toggle-menu {
+	display: none;
+}
+
+/* Main Menu */
+
+.main-menu-wrapper {}
+.main-menu-header {
+	margin: 0;
+    padding: 10px 0;
+    border-top: 1px solid #b2b5b7;
+    border-bottom: 1px solid #b2b5b7;
+    color: #6a6c6d;
+    text-align: center;
+}
+.main-menu {}
+
+/* Menu List */
+
+.menu-glyph {
+	font-size: 16px;
+	padding-right: 5px;
+}
+.menu-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.menu-list-item {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.menu-list-item:last-child {
+	margin: 10px 0 0 0;
+    padding: 10px 0;
+	border-top: 1px solid #b2b5b7;
+    border-bottom: 1px solid #b2b5b7;
+}
+.menu-list-item a {
+	display: block;
+    position: relative;
+    padding: 15px 0 15px 25px;
+    color: #6a6c6d;
+}
+.menu-list-item a:hover {
+	background-color: white;
+}
+
+.site-content {
+/* 	width: 75%; */
+	float: right;
+	background-color: #e6e9ec;
 }
 
 
 /* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------- Media Queries ----------------------------------------------------- */
+
+@media( min-width: 768px ) {
+	.sidebar-header {
+		position: fixed;
+		height: 100vh;
+		float: left;
+	}
+}
+
+@media( min-width: 992px ) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
