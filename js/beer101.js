@@ -1,9 +1,10 @@
+
 $(document).ready(function () {
 
-/* Menu functions */
+// *** Menu functions *** //
 
-function toggleMobileMenu() {
-  $( '.dropdown-mobile-menu' ).animate( { height: 'toggle' }, 250 );
+function toggleMenu() {
+  $( '.toggle-menu' ).animate( { height: 'toggle' }, 250 );
 }
 
 function hideMobileMenu () {
@@ -11,8 +12,8 @@ function hideMobileMenu () {
 }
 
 // Toggle dropdwon mobile menu
-  $( '.dropdown-hamburger' ).on( 'click', toggleMobileMenu );
-  $( '.dropdown-menu-button' ).on( 'click', toggleMobileMenu );
+  $( '.toggle-menu-header > .menu-glyph' ).click( toggleMenu );
+  $( '.dropdown-menu-button' ).on( 'click', toggleMenu );
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Toggle hidden-text functions
