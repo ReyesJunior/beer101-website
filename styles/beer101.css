@@ -107,16 +107,64 @@ body {
 	background-color: #e6e9ec;
 }
 
-
 /* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
 
+/* /////---------------------
 
+	Home Carousel
 
+/////---------------------- */
 
-
-
-
-
+.carousel-inner .item {
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.carousel-inner .item:first-child {
+	background-image: url( http://i.imgur.com/hMGQwDJ.jpg?1 );
+}
+.carousel-inner .item:nth-child(2){
+	background-image: url( http://i.imgur.com/NAmFwJy.jpg?1 );
+}
+.carousel-inner .item:nth-child(3) {
+	background-image: url( http://i.imgur.com/pwcAheH.jpg?1 );
+}
+.carousel-inner .item:nth-child(4) {
+	background-image: url( http://i.imgur.com/509f8cf.png?1 );
+}
+.carousel-image-overlay {
+	position: absolute;
+	top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.35);
+}
+.carousel-caption {
+	position: relative;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-left: 25px;
+    padding-right: 25px;
+}
+.carousel-indicators {
+	position: static;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+    background-color: #364A5A;
+}
+.carousel-indicators .active {
+	background-color: #FF7200;
+	border-color: #FF7200;
+}
+a.btn.btn-primary:hover {
+	background-color: #229bd8;
+}
 
 
 /* ----------------------------------------------------- Media Queries ----------------------------------------------------- */
