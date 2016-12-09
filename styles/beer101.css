@@ -20,7 +20,7 @@ body {
 .sidebar-header-wrapper {}
 .sidebar-header {
 	padding: 15px 15px 25px;
-	background-color: #fcfcfc;
+	background-color: white;
 }
 .logo-wrapper {
 	height: 100px;
@@ -104,7 +104,7 @@ body {
 
 .site-content {
 	float: right;
-	background-color: #e6e9ec;
+	background-color: #edeff0;
 }
 .classification-shortlist {
 	float: right; 
@@ -119,7 +119,7 @@ body {
 .panel {
 	border: 0;
 	margin-bottom: 25px;
-	background-color: #fcfcfc;
+	background-color: white;
 	color: #364a5a;
 }
 .panel-default {
@@ -141,6 +141,33 @@ body {
 	padding: 15px 25px;
     line-height: 24px;
 }
+.panel-body li {
+	list-style: none;
+    margin: 10px auto;
+}
+.hidden-text {
+	display: none;
+}
+.text-visibility-button {
+	width: 75px;
+    margin: 20px 0 0 auto;
+	font-size: 12px;
+    padding: 5px;
+	border-radius: 4px;
+    background-color: #D85F22;
+    text-align: center;
+    color: white;
+}
+.text-visibility-button:hover {
+	color: #D85F22;
+	background-color: #364A5A;
+}
+
+strong {
+	font-size: 17px;
+	color: #263644
+}
+
 
 /* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
 
@@ -153,22 +180,22 @@ body {
 .home-carousel {
 	margin: 15px 15px 0;
 }
-.carousel-inner .item {
+.homepage-carousel-inner .item {
 	background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 }
-.carousel-inner .item:first-child {
+.homepage-carousel-inner .item:first-child {
 	background-image: url( http://i.imgur.com/hMGQwDJ.jpg?1 );
 }
-.carousel-inner .item:nth-child(2){
+.homepage-carousel-inner .item:nth-child(2){
 	background-image: url( http://i.imgur.com/NAmFwJy.jpg?1 );
 }
-.carousel-inner .item:nth-child(3) {
+.homepage-carousel-inner .item:nth-child(3) {
 	background-image: url( http://i.imgur.com/pwcAheH.jpg?1 );
 }
-.carousel-inner .item:nth-child(4) {
+.homepage-carousel-inner .item:nth-child(4) {
 	background-image: url( http://i.imgur.com/509f8cf.png?1 );
 }
 .carousel-image-overlay {
@@ -179,7 +206,7 @@ body {
     width: 100%;
     background-color: rgba(0,0,0, 0.35);
 }
-.carousel-caption {
+.homepage-carousel-caption {
 	position: relative;
 	right: 0;
 	bottom: 0;
@@ -187,7 +214,7 @@ body {
 	padding-left: 25px;
     padding-right: 25px;
 }
-.carousel-indicators {
+.homepage-carousel-indicators {
 	position: static;
     width: 100%;
     margin: 0;
@@ -196,7 +223,7 @@ body {
     list-style: none;
     background-color: #364A5A;
 }
-.carousel-indicators .active {
+.homepage-carousel-indicators .active {
 	background-color: #FF7200;
 	border-color: #FF7200;
 }
@@ -232,7 +259,7 @@ a.btn.btn-primary:hover {
 	margin-left: 15px;
     margin-right: 15px;
     border-radius: 4px;
-    background-color: #e6e9ec;
+    background-color: #edeff0;
  	/* overflow: scroll; */
  }
 
@@ -372,6 +399,75 @@ label:hover {
   font-size: 14px;
   color: transparent;
   overflow: hidden;
+}
+
+
+/* ///////////////////////////////////////////////// ------- Brewing Process ------- ///////////////////////////////////////////////// */
+
+/* /////---------------------
+
+	Brewing Process Carousel
+
+/////---------------------- */
+
+#brewing-process-slider {
+	max-width: 600px;
+    margin: 25px auto;
+}
+.brewing-process-carousel-inner {
+	height: 450px;
+	background-color: white;
+	border-radius: 4px;
+}
+.brewing-process-carousel-caption {
+	position: relative;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-top: 10px;
+}
+.brewing-process-carousel-control.right, .brewing-process-carousel-control.left {
+	color: #364a5a;
+	opacity: 1;
+	background: transparent;
+}
+.brewing-process-carousel-control.right .glyphicon-chevron-right {
+	right: 25%;
+}
+.brewing-process-carousel-control.left .glyphicon-chevron-left {
+	left: 25%;
+}
+.brewing-process-carousel-indicators {
+	position: static;
+	width: 100%;
+	background: #364a5a;
+	margin: 0 auto;
+}
+.step-title {
+	width: 35%;
+    background-color: #D85F22;
+    color: white;
+    text-align: center;
+    padding-bottom: 4px;
+    padding: 5px;
+    margin: 0 auto;
+}
+.step-name {
+	margin: 10px auto;
+    width: 70%;
+    font-size: 24px;
+    background-color: #364A5A;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.step-description {
+	font-size: 15px;
+	padding: 0 25px;
+	color: #364a5a;
+	text-shadow: none;
 }
 
 
