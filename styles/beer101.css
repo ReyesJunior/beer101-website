@@ -1,14 +1,12 @@
+
+
 /* /////---------------------
 
 	Global CSS
 
 /////---------------------- */
 
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
-
-
 body {
-	font-family: "Noto Sans", sans-serif;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -22,7 +20,7 @@ body {
 .sidebar-header-wrapper {}
 .sidebar-header {
 	padding: 15px 15px 25px;
-	background-color: #e6e9ec;
+	background-color: #fcfcfc;
 }
 .logo-wrapper {
 	height: 100px;
@@ -39,9 +37,9 @@ body {
 .toggle-menu-header {
 	margin: 0;
     padding: 10px 0;
-    border-top: 1px solid #b2b5b7;
-    border-bottom: 1px solid #b2b5b7;
-    color: #6a6c6d;
+    border-top: 1px solid #364a5a;
+    border-bottom: 1px solid #364a5a;
+    color: #364a5a;
     text-align: center;
 }
 .toggle-menu {
@@ -54,9 +52,9 @@ body {
 .main-menu-header {
 	margin: 0;
     padding: 10px 0;
-    border-top: 1px solid #b2b5b7;
-    border-bottom: 1px solid #b2b5b7;
-    color: #6a6c6d;
+    border-top: 1px solid #364a5a;
+    border-bottom: 1px solid #364a5a;
+    color: #364a5a;
     text-align: center;
 }
 .main-menu {}
@@ -80,31 +78,68 @@ body {
 .menu-list-item:last-child {
 	margin: 10px 0 0 0;
     padding: 10px 0;
-	border-top: 1px solid #b2b5b7;
-    border-bottom: 1px solid #b2b5b7;
+	border-top: 1px solid #364a5a;
+    border-bottom: 1px solid #364a5a;
 }
 .menu-list-item a {
 	display: block;
     position: relative;
     padding: 15px 0 15px 25px;
-    color: #6a6c6d;
+    color: #364a5a;
 }
 .menu-list-item a:hover {
-	background-color: white;
+	color: white;
+	background-color: #364a5a;
 }
 .menu-list-item a.active::before {
     content: '';
-    border-left: 5px solid #6a6c6d;
+    border-left: 10px solid #ff7200;
     position: absolute;
-    height: 50%;
+    height: 80%;
     left: 0;
-    top: 25%;
+    top: 10%;
 }
 
+/* Site-Content */
+
 .site-content {
-/* 	width: 75%; */
 	float: right;
 	background-color: #e6e9ec;
+}
+.classification-shortlist {
+	float: right; 
+}
+
+/* /////---------------------
+
+	Section-Panels
+
+/////---------------------- */
+
+.panel {
+	border: 0;
+	margin-bottom: 25px;
+	background-color: #fcfcfc;
+	color: #364a5a;
+}
+.panel-default {
+	max-width: 600px;
+	margin: 25px auto;
+}
+.panel-default .panel-heading {
+	width: 100%;
+    margin: 0 auto;
+    padding: 25px 25px 15px 25px;
+    border: 0;
+    background-color: #ff9435; 
+	text-align: center;
+}
+.panel-title {
+	font-size: 26px;
+}
+.panel-body {
+	padding: 15px 25px;
+    line-height: 24px;
 }
 
 /* ///////////////////////////////////////////////// ------- Homepage ------- ///////////////////////////////////////////////// */
@@ -115,6 +150,9 @@ body {
 
 /////---------------------- */
 
+.home-carousel {
+	margin: 15px 15px 0;
+}
 .carousel-inner .item {
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -174,6 +212,9 @@ a.btn.btn-primary:hover {
 		position: fixed;
 		height: 100vh;
 		float: left;
+	}
+	.section-panel {
+		padding: 0 45px;
 	}
 }
 
