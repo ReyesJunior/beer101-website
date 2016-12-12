@@ -194,6 +194,9 @@ a, a:hover {
 	list-style: none;
     margin: 10px auto;
 }
+
+/* Toggle Text */
+
 .hidden-text {
 	display: none;
 }
@@ -203,12 +206,12 @@ a, a:hover {
 	font-size: 12px;
     padding: 5px;
 	border-radius: 4px;
-    background-color: #D85F22;
+    background-color: #edeff0;
     text-align: center;
-    color: white;
+    color: #364a5a;
 }
 .text-visibility-button:hover {
-	color: #D85F22;
+	color: white;
 	background-color: #364A5A;
 }
 strong {
