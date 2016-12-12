@@ -134,6 +134,10 @@ body {
     background-color: #ff9435; 
 	text-align: center;
 }
+.primary.panel-heading {
+	background-color: #364a5a;
+    color: #fff;
+}
 .panel-title {
 	font-size: 26px;
 }
