@@ -10,7 +10,9 @@ body {
 	margin: 0 auto;
 	padding: 0;
 }
-
+a, a:hover {
+	text-decoration: none;
+}
 /* /////---------------------
 
 	Sidebar Header
@@ -75,12 +77,6 @@ body {
     margin: 0;
     padding: 0;
 }
-.menu-list-item:last-child {
-	margin: 10px 0 0 0;
-    padding: 10px 0;
-	border-top: 1px solid #364a5a;
-    border-bottom: 1px solid #364a5a;
-}
 .menu-list-item a {
 	display: block;
     position: relative;
@@ -93,11 +89,45 @@ body {
 }
 .menu-list-item a.active::before {
     content: '';
-    border-left: 10px solid #ff7200;
+    border-left: 10px solid #ff9435;
     position: absolute;
     height: 80%;
     left: 0;
     top: 10%;
+}
+
+/* Quick Links Menu */
+.quick-links-menu-header {
+	margin: 0;
+    padding: 10px 0;
+    border-top: 1px solid #364a5a;
+    border-bottom: 1px solid #364a5a;
+    color: #364a5a;
+    text-align: center;
+}
+
+.quick-links-menu {
+}
+.quick-links-list-item {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.quick-links-list-item a {
+	display: block;
+    position: relative;
+    padding: 15px 0 15px 25px;
+    color: #364a5a;
+}
+.quick-links-list-item a:hover {
+	color: white;
+	background-color: #364a5a;
+}
+.quick-links-list-item:last-child {
+	margin: 10px 0 0 0;
+    padding: 10px 0;
+	border-top: 1px solid #364a5a;
+    border-bottom: 1px solid #364a5a;
 }
 
 /* Site-Content */
