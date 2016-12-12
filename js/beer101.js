@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-  
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Menu functions
 
@@ -21,6 +21,7 @@ function hideMobileMenu () {
 
 // function revealSectionText () {
 //   $( this ).text( 'Read Less' ).siblings( '.hidden-text' ).slideToggle();
+//   console.log( "test" );
 // }
 
 // function hideSectionText () {
@@ -65,7 +66,7 @@ function hideMobileMenu () {
 //   $('.panel-body-text:nth-child(5)').removeClass('hidden-text');
 // }
 
-// addClasses
+// // addClasses
 
 // function addFirstHiddenTextClass() {
 //   $('.panel-body-text:nth-child(2)').addClass('hidden-text');
@@ -85,15 +86,15 @@ function hideMobileMenu () {
 // }
 
 
-  // $(window).resize(function(){
-  //    var width = $(window).width();
-  //       if( width < 620 ){
-  //         addFirstHiddenTextClass();
-  //         addSecondHiddenTextClass();
-  //         addThirdHiddenTextClass();
-  //         addFourthHiddenTextClass();
-  //       }
-  //   }).resize(); // Trigger resize function on page load
+//   $(window).resize(function(){
+//      var width = $(window).width();
+//         if( width < 620 ){
+//           addFirstHiddenTextClass();
+//           addSecondHiddenTextClass();
+//           addThirdHiddenTextClass();
+//           addFourthHiddenTextClass();
+//         }
+//     }).resize(); // Trigger resize function on page load
 
   // $(window).resize(function(){
   //    var width = $(window).width();

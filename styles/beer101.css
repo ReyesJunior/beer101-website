@@ -198,9 +198,10 @@ a, a:hover {
 /* Toggle Text */
 
 .hidden-text {
-	display: none;
+	display: none !important;
 }
 .text-visibility-button {
+	display: none !important;
 	width: 75px;
     margin: 20px 0 0 auto;
 	font-size: 12px;
@@ -370,10 +371,6 @@ label:hover {
 
 /////---------------------- */
 
-.brewing-process-carousel-wrapper {
-	padding: 0 45px;
-}
-
 #brewing-process-slider {
 	max-width: 600px;
     margin: 25px auto;
@@ -440,6 +437,9 @@ label:hover {
 		float: left;
 	}
 	.section-panel {
+		padding: 0 45px;
+	}
+	.brewing-process-carousel-wrapper {
 		padding: 0 45px;
 	}
 }
