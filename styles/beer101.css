@@ -255,7 +255,6 @@ strong {
 }
 .radio:checked ~ .snapshot-content {
 	max-height: 500px;
-	/* max-width: 500px; */
 	border-color: #364A5A;
 	margin-right: 20px;
 	transform: translateX(20px);
@@ -368,12 +367,15 @@ label:hover {
 
 /////---------------------- */
 
+.brewing-process-carousel-wrapper {
+	padding: 0 45px;
+}
+
 #brewing-process-slider {
 	max-width: 600px;
     margin: 25px auto;
 }
 .brewing-process-carousel-inner {
-	height: 450px;
 	background-color: white;
 	border-radius: 4px;
 }
@@ -382,9 +384,7 @@ label:hover {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	padding-right: 25px;
-	padding-left: 25px;
-	padding-top: 10px;
+	padding: 25px;
 }
 .brewing-process-carousel-control.right, .brewing-process-carousel-control.left {
 	color: #364a5a;
@@ -404,8 +404,7 @@ label:hover {
 	margin: 0 auto;
 }
 .step-title {
-	width: 35%;
-    background-color: #D85F22;
+    background-color: #ff9435;
     color: white;
     text-align: center;
     padding-bottom: 4px;
@@ -413,13 +412,13 @@ label:hover {
     margin: 0 auto;
 }
 .step-name {
-	margin: 10px auto;
-    width: 70%;
+	margin: 10px auto 15px;
     font-size: 24px;
-    background-color: #364A5A;
-    color: white;
+    background-color: #edeff0;
+    color: #364a5a;
     text-align: center;
     padding: 10px;
+    text-shadow: none;
 }
 .step-description {
 	font-size: 15px;
