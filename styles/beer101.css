@@ -26,9 +26,16 @@ a, a:hover {
 }
 .logo-wrapper {
 	height: 100px;
+	background: #364a5a;
+    margin: 10px auto 25px;
 }
 .logo {
 	text-align: center;
+}
+.logo h1 {
+	margin-top: 30px;
+    text-transform: uppercase;
+    color: #fff;
 }
 
 /* Toogle Menu */
@@ -84,8 +91,8 @@ a, a:hover {
     color: #364a5a;
 }
 .menu-list-item a:hover {
-	color: white;
-	background-color: #364a5a;
+	color: #ff9435;
+    background-color: #edeff0;
 }
 .menu-list-item a.active::before {
     content: '';
@@ -120,8 +127,8 @@ a, a:hover {
     color: #364a5a;
 }
 .quick-links-list-item a:hover {
-	color: white;
-	background-color: #364a5a;
+	color: #ff9435;
+    background-color: #edeff0;
 }
 .quick-links-list-item:last-child {
 	margin: 10px 0 0 0;
@@ -161,6 +168,7 @@ a, a:hover {
     margin: 0 auto;
     padding: 25px 25px 15px 25px;
     border: 0;
+    color: #364a5a;
     background-color: #ff9435; 
 	text-align: center;
 }
@@ -174,6 +182,7 @@ a, a:hover {
 .panel-body {
 	padding: 15px 25px;
     line-height: 24px;
+    color: #364a5a;
 }
 .panel-body li {
 	list-style: none;
